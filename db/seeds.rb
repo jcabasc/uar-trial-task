@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+puts "Creating custom files..."
+CustomFile.create(name: "file1", tags: [:tag1, :tag2, :tag3, :tag5])
+CustomFile.create(name: "file2", tags: [:tag2])
+CustomFile.create(name: "file3", tags: [:tag2, :tag3, :tag5])
+CustomFile.create(name: "file4", tags: [:tag2, :tag3, :tag4, :tag5])
+CustomFile.create(name: "file5", tags: [:tag3, :tag4])
+puts "Finished."
